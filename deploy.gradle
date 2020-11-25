@@ -1,8 +1,8 @@
 apply plugin: 'maven'
 apply plugin: 'signing'
 
-version = '0.7.1'
-group   = 'org.signal'
+version = '1.0.0'
+group   = 'org.nero'
 
 def isReleaseBuild() {
     return version.contains("SNAPSHOT") == false
@@ -38,12 +38,12 @@ uploadArchives {
         pom.project {
             name archivesBaseName
             description 'Zero Knowledge Groups library'
-            url 'https://github.com/signalapp/zkgroup'
+            url 'https://github.com/khodzhaeva/zkgroup'
 
             scm {
-                url 'scm:git@github.com:signalapp/zkgroup.git'
-                connection 'scm:git@github.com:signalapp/zkgroup.git'
-                developerConnection 'scm:git@github.com:signalapp/zkgroup.git'
+                url 'scm:git@github.com:khodzhaeva/zkgroup.git'
+                connection 'scm:git@github.com:khodzhaeva/zkgroup.git'
+                developerConnection 'scm:git@github.com:khodzhaeva/zkgroup.git'
             }
 
             licenses {
@@ -56,7 +56,7 @@ uploadArchives {
 
             developers {
                 developer {
-                    name 'Trevor Perrin'
+                    name 'Khodzhaeva N'
                 }
             }
         }
