@@ -41,9 +41,9 @@ uploadArchives {
             url 'https://github.com/khodzhaeva/apiservice'
 
             scm {
-                url 'scm:git@github.com:khodzhaeva/zkgroup.git'
-                connection 'scm:git@github.com:khodzhaeva/zkgroup.git'
-                developerConnection 'scm:git@github.com:khodzhaeva/zkgroup.git'
+                url 'scm:git@github.com:khodzhaeva/apiservice.git'
+                connection 'scm:git@github.com:khodzhaeva/apiservice.git'
+                developerConnection 'scm:git@github.com:khodzhaeva/apiservice.git'
             }
 
             licenses {
