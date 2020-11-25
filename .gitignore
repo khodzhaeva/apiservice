@@ -1,0 +1,14 @@
+build
+target
+.idea
+.gradle
+ffi/java/.idea
+ffi/java/build
+ffi/java/out
+ffi/java/src/main/resources
+*.iml
+ffi/node/node_modules
+ffi/node/dist
+.DS_Store
+.project
+.settings
