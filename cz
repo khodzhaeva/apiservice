@@ -1,0 +1,29 @@
+
+
+task makeMac(type:Exec) {
+  group 'Rust'
+  description 'Build the mac library'
+
+  commandLine 'make', 'mac_dylib'
+}
+
+task makeServer(type:Exec) {
+  group 'Rust'
+  description 'Build the server linux library'
+
+  commandLine 'make', 'server_so'
+}
+
+task makeAndroid(type:Exec) {
+  group 'Rust'
+  description 'Build the android libraries'
+
+  commandLine 'make', 'android_so'
+}
+
+task makeAll() {
+  group 'Rust'
+  description 'Build the android libraries'
+
+  dependsOn 'makeMac', 'makeServer', 'makeAndroid'
+}
